@@ -3,7 +3,7 @@
         <nav class="app_nav">
             <div class="nav_div">
                 <ul class="nav_ul">
-                    <li class="nav_li"><a href="#" class="nav_a" id="nav_a_apple"><span>^_^</span></a></li>
+                    <li class="nav_li"><a href="#" class="nav_a" id="nav_a_apple"><span>index</span></a></li>
                     <li class="nav_li"><a href="#" class="nav_a"><span>Mac</span></a></li>
                     <li class="nav_li"><a href="#" class="nav_a"><span>iPad</span></a></li>
                     <li class="nav_li"><a href="#" class="nav_a"><span>iPhone</span></a></li>
@@ -11,15 +11,15 @@
                     <li class="nav_li"><a href="#" class="nav_a"><span>TV</span></a></li>
                     <li class="nav_li"><a href="#" class="nav_a"><span>Music</span></a></li>
                     <li class="nav_li"><a href="#" class="nav_a"><span>Support</span></a></li>
-                    <li class="nav_li"><a href="#" class="nav_a" id="nav_a_search">S<span></span></a></li>
-                    <li class="nav_li"><a href="#" class="nav_a" id="nav_a_shop">S<span></span></a></li>
+                    <li class="nav_li"><a href="#" class="nav_a" id="nav_a_search"><span>S</span></a></li>
+                    <li class="nav_li"><a href="#" class="nav_a" id="nav_a_shop"><span>S</span></a></li>
                 </ul>
             </div>
             <div class="nav_div_fold">
                 <ul class="nav_main_ul">
-                    <li class="nav_items"><a href="javascript:;" @click="showMenu">=</a></li>
-                    <li class="nav_items"><a href="javascript:;">^_^</a></li>
-                    <li class="nav_items"><a href="javascript:;">S</a></li>
+                    <li class="nav_items"><a href="javascript:;" @click="showMenu" id="items_list"><span>=</span></a></li>
+                    <li class="nav_items"><a href="javascript:;" id="items_index"><span>index</span></a></li>
+                    <li class="nav_items"><a href="javascript:;" id="items_shop"><span>shop</span></a></li>
                 </ul>
                 <div class="menu_search" id="menu_search" v-if="show">
                     <div class="search_inp"></div>
@@ -47,8 +47,8 @@ export default {
   },
   methods: {
     showMenu: function(v) {
-      console.log(this.show)
-      this.show = !this.show
+      console.log(this.show);
+      this.show = !this.show;
     }
   }
 };
@@ -68,12 +68,47 @@ a {
   width: 100%;
   z-index: 5;
 }
+#nav_a_apple,
+#nav_a_search,
+#nav_a_shop {
+  display: inline-block;
+  background-size: 16px 44px;
+  background-repeat: no-repeat;
+  background-image: url(../../../static/image/header_index.svg);
+  background-position: center center;
+  width: 16px;
+  span {
+    visibility: hidden;
+  }
+}
+#nav_a_search {
+  background-image: url(../../../static/image/header_search.svg);
+}
+#nav_a_shop {
+  background-image: url(../../../static/image/header_shop.svg);
+}
+#items_index,
+#items_shop {
+  display: inline-block;
+  background-size: 16px 44px;
+  background-repeat: no-repeat;
+  background-image: url(../../../static/image/header_index.svg);
+  background-position: center center;
+  width: 16px;
+  span {
+    visibility: hidden;
+  }
+}
+#items_shop {
+  background-image: url(../../../static/image/header_shop.svg);
+}
 // 导航折叠
 @media screen and (max-width: 767px) {
   .nav_div {
     display: none;
   }
   .nav_div_fold {
+    font-size: 14px;
     display: block;
     max-width: 980px;
     margin: 0 auto;
@@ -142,6 +177,7 @@ a {
     display: none;
   }
   .nav_div {
+    font-size: 14px;
     display: block;
     max-width: 980px;
     margin: 0 auto;
@@ -159,9 +195,6 @@ a {
         }
       }
     }
-  }
-  #nav_a_apple {
-    // background-image: url(../image/index.png);
   }
 }
 </style>
