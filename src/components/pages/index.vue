@@ -224,95 +224,6 @@ export default {
       }
     }
   }
-  /*.con_bot {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 100%;
-    // position: relative;
-    .bot_items {
-      box-sizing: border-box;
-      position: relative;
-      // height: 580px;
-      width: 50%;
-      background-color: #fafafa;
-      border-color: #fff;
-      border-style: solid;
-      border-top-width: 6px;
-      border-bottom-width: 6px;
-      overflow: hidden;
-      .bot_detail {
-        text-align: center;
-        z-index: 4;
-        position: relative;
-        h4 {
-          // font-size: 36px;
-          // line-height: 44px;
-          // font-weight: 600;
-          width: 88%;
-          max-width: 430px;
-          margin-left: auto;
-          margin-right: auto;
-          text-align: center;
-        }
-        h5 {
-          text-align: center;
-          width: 88%;
-          max-width: 430px;
-          // font-size: 19px;
-          // line-height: 23px;
-          font-weight: 200;
-          letter-spacing: 0.02em;
-          margin-top: 4px;
-          margin-left: auto;
-          margin-right: auto;
-        }
-        .bot_link {
-          a {
-            color: rgb(0, 112, 201);
-            font-size: 17px;
-            font-weight: 400;
-            // height: 21px;
-            &:hover {
-              text-decoration: underline;
-            }
-            &:after {
-              content: ">";
-            }
-          }
-        }
-      }
-      .botimg_cover {
-        z-index: 1;
-        overflow: visible;
-        flex-flow: 1;
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        figure {
-          z-index: 1;
-          position: absolute;
-          border: 0;
-          margin: 0;
-          padding: 0;
-          left: calc(50% + 0px);
-          right: auto;
-          bottom: 0px;
-          top: auto;
-          -webkit-transform: translatex(-50%);
-          transform: translatex(-50%);
-        }
-      }
-      &:nth-child(2n + 1) {
-        border-left-width: 12px;
-      }
-      &:nth-child(2n) {
-        border-right-width: 12px;
-      }
-    }
-  }*/
 }
 
 @media screen and (max-width: 681px) {
@@ -754,7 +665,7 @@ export default {
         figure {
           width:304px;
           height: 314px;
-          background-size: 417px 387px;
+          background-size: 304px 314px;
           background-repeat: no-repeat;
           background-image: url(../../../static/image/airpods_medium.jpg);
           

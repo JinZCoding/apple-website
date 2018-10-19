@@ -98,7 +98,8 @@
             <nav class="minmid_ban">
                 <div class="minnav_div">
                     <div class="cshow" @click="s1 = !s1">
-                        <a href="javascript:;"><span>+</span></a>
+                        <a href="javascript:;" v-if="!s1"><span>+</span></a>
+                        <a href="javascript:;" v-if="s1"><span>x</span></a>
                         <div class="min_tit">
                             <span>Shop and Learn</span>
                         </div>
@@ -119,7 +120,8 @@
                 </div>
                 <div class="minnav_div">
                     <div class="cshow" @click="s2 = !s2">
-                        <a href="javascript:;"><span>+</span></a>
+                        <a href="javascript:;" v-if="!s2"><span>+</span></a>
+                        <a href="javascript:;" v-if="s2"><span>x</span></a>
                         <div class="min_tit">
                             <span>Apple Store</span>
                         </div>
@@ -140,7 +142,8 @@
                 </div>
                 <div class="minnav_div">
                     <div class="cshow" @click="s3 = !s3">
-                        <a href="javascript:;"><span>+</span></a>
+                        <a href="javascript:;" v-if="!s3"><span>+</span></a>
+                        <a href="javascript:;" v-if="s3"><span>x</span></a>
                         <div class="min_tit">
                             <span>For Education</span>
                         </div>
@@ -152,7 +155,8 @@
                 </div>
                 <div class="minnav_div">
                     <div class="cshow" @click="s4 = !s4">
-                        <a href="javascript:;"><span>+</span></a>
+                        <a href="javascript:;" v-if="!s4"><span>+</span></a>
+                        <a href="javascript:;" v-if="s4"><span>x</span></a>
                         <div class="min_tit">
                             <span>For Business</span>
                         </div>
@@ -164,7 +168,8 @@
                 </div>
                 <div class="minnav_div">
                     <div class="cshow" @click="s5 = !s5">
-                        <a href="javascript:;"><span>+</span></a>
+                        <a href="javascript:;" v-if="!s5"><span>+</span></a>
+                        <a href="javascript:;" v-if="s5"><span>x</span></a>
                         <div class="min_tit">
                             <span>Account</span>
                         </div>
@@ -177,7 +182,8 @@
                 </div>
                 <div class="minnav_div">
                     <div class="cshow" @click="s6 = !s6">
-                        <a href="javascript:;"><span>+</span></a>
+                        <a href="javascript:;" v-if="!s6"><span>+</span></a>
+                        <a href="javascript:;" v-if="s6"><span>x</span></a>
                         <div class="min_tit">
                             <span>Apple Values</span>
                         </div>
@@ -193,7 +199,8 @@
                 </div>
                 <div class="minnav_div">
                     <div class="cshow" @click="s7 = !s7">
-                        <a href="#"><span>+</span></a>
+                        <a href="javascript:;" v-if="!s7"><span>+</span></a>
+                        <a href="javascript:;" v-if="s7"><span>x</span></a>
                         <div class="min_tit">
                             <span>About Apple</span>
                         </div>
